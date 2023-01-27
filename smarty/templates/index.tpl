@@ -6,6 +6,10 @@
     </head>
     
     <body>
-        aquí el body
+        <div id="wrapper">
+            <section id="portada" class="nh-wrapper">
+                {include file="portada.tpl"}
+            </section>
+        </div>
     </body>
 </html>

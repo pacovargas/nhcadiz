@@ -1,1 +1,56 @@
-body{}
+@font-face {
+  font-family: 'Codec';
+  src: url('/assets/fonts/Codec-Cold-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Codec';
+  src: url('/assets/fonts/Codec-Cold-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+html{
+    --verde: #034C42;
+}
+
+body{
+    font-family: "Codec", sans-serif;
+    margin: 0;
+}
+
+h1{
+    color: var(--verde);
+    font-size: 5.75vw;
+    font-weight: 700;
+    margin-top: 45px;
+}
+
+#portada{
+    background: url(/assets/img/cover.png) no-repeat;
+    background-size: cover;
+    height: 60vw;
+    padding-top: 45px;
+    padding-bottom: 20px;
+    padding-left: 83px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo img{
+    max-width: 398px;
+    width: 11.1vw;
+}
+
+.titulo-container{
+    max-width: 500px
+}
+
+.portada-footer{
+    color: var(--verde);
+    font-weight: 700;
+    font-size: 2.46vw;
+}
