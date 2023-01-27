@@ -26,6 +26,8 @@ h1{
     font-size: 5.75vw;
     font-weight: 700;
     margin-top: 45px;
+    display: flex;
+    flex-direction: column
 }
 
 #portada{
@@ -43,14 +45,55 @@ h1{
 .logo img{
     max-width: 398px;
     width: 11.1vw;
+    height: auto;
 }
 
 .titulo-container{
-    max-width: 500px
+    width: 36vw;
 }
 
 .portada-footer{
     color: var(--verde);
     font-weight: 700;
     font-size: 2.46vw;
+}
+
+@media (max-width: 992px){
+    #portada{
+        padding-top: 30px;
+        padding-bottom:0
+    }
+    
+    h1{
+        font-size: 7.75vw;
+        margin-top: 20px;
+    }
+    
+    .portada-footer{
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 768px){
+    #portada{
+        padding-left: 25px;
+        padding-top: 15px;
+        height: 80vw;
+    }
+    
+    .logo img{
+        width: 16vw
+    }
+    
+    h1{
+        margin-top: 5px;
+        font-size: 10vw;
+        line-height: 1;
+    }
+    
+    .portada-footer{
+        font-size: 5vw;
+        position: relative;
+        top: 7px
+    }
 }
