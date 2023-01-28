@@ -14,6 +14,7 @@
 
 html{
     --verde: #034C42;
+    --blanco: #fff;
 }
 
 body{
@@ -58,7 +59,57 @@ h1{
     font-size: 2.46vw;
 }
 
-@media (max-width: 992px){
+.nh-wrapper{
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+.nh-container{
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.nh-container p{
+    margin-top: 0;
+}
+
+#plan{
+    color: var(--blanco);
+    background: var(--verde);
+    padding-top: 170px;
+    padding-bottom: 225px;
+    text-align: center;
+    font-size: 56px;
+    line-height: 66px;
+    font-weight: 700;
+}
+
+#plan .plan-title{
+    font-size: 38px;
+}
+
+#plan p{
+    margin-bottom: 40px
+}
+
+#plan .plan-texto p{
+    margin-bottom: 80px;
+}
+
+@media (max-width: 1199px){
+    #plan{
+        padding-top: 120px;
+        padding-bottom: 140px;
+        font-size: 46px;
+        line-height: 66px;
+    }
+
+    #plan .plan-title{
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 991px){
     #portada{
         padding-top: 30px;
         padding-bottom:0
@@ -72,9 +123,23 @@ h1{
     .portada-footer{
         font-size: 3.5vw;
     }
+    
+    #plan{
+        padding-bottom: 120px;
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    #plan .plan-title{
+        font-size: 28px;
+    }
+    
+    #plan .plan-texto p{
+        margin-bottom: 60px;
+    }
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
     #portada{
         padding-left: 25px;
         padding-top: 15px;
@@ -95,5 +160,29 @@ h1{
         font-size: 5vw;
         position: relative;
         top: 7px
+    }
+    
+    .nh-wrapper{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #plan{
+        padding-top: 80px;
+        padding-bottom: 60px;
+        font-size: 20px;
+        line-height: 38px;
+    }
+
+    #plan .plan-title{
+        font-size: 15px;
+    }
+    
+    #plan .plan-title p{
+        margin-bottom: 30px;
+    }
+    
+    #plan .plan-texto p{
+        margin-bottom: 40px;
     }
 }

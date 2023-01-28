@@ -10,6 +10,10 @@
             <section id="portada" class="nh-wrapper">
                 {include file="portada.tpl"}
             </section>
+
+            <section id="plan" class="nh-wrapper">
+                {include file="plan.tpl"}
+            </section>
         </div>
     </body>
 </html>
