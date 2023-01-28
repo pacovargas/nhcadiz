@@ -11,11 +11,11 @@
                 {include file="portada.tpl"}
             </section>
 
-            <section id="plan" class="nh-wrapper">
+            <section id="plan" class="nh-wrapper verde">
                 {include file="plan.tpl"}
             </section>
 
-            <section id="metodo-naturhouse" class="nh-wrapper">
+            <section id="metodo-naturhouse" class="nh-wrapper verde-claro">
                 {include file="metodo.tpl"}
             </section>
         </div>

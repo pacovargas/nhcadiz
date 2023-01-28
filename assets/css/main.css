@@ -1,13 +1,20 @@
 @font-face {
-  font-family: 'Codec';
-  src: url('/assets/fonts/Codec-Cold-Regular.ttf') format('truetype');
+  font-family: 'Poppins';
+  src: url('/assets/fonts/Poppins-Regular.ttf') format('truetype');
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Codec';
-  src: url('/assets/fonts/Codec-Cold-Bold.ttf') format('truetype');
+  font-family: 'Poppins';
+  src: url('/assets/fonts/Poppins-SemiBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/Poppins-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: 700;
 }
@@ -15,17 +22,20 @@
 html{
     --verde: #034C42;
     --blanco: #fff;
+    --verde-claro: #D4DDB7;
+    --negro: #000;
+    --beig: #EFF0EC;
 }
 
 body{
-    font-family: "Codec", sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
 }
 
 h1{
     color: var(--verde);
     font-size: 5.75vw;
-    font-weight: 700;
+    font-weight: 600;
     margin-top: 45px;
     display: flex;
     flex-direction: column
@@ -55,7 +65,7 @@ h1{
 
 .portada-footer{
     color: var(--verde);
-    font-weight: 700;
+    font-weight: 600;
     font-size: 2.46vw;
 }
 
@@ -69,19 +79,27 @@ h1{
     margin: 0 auto;
 }
 
-.nh-container p{
+.nh-container p,
+h2{
     margin-top: 0;
+}
+
+.verde{
+    background: var(--verde);
+}
+
+.verde-claro{
+    background: var(--verde-claro);
 }
 
 #plan{
     color: var(--blanco);
-    background: var(--verde);
     padding-top: 170px;
     padding-bottom: 225px;
     text-align: center;
     font-size: 56px;
-    line-height: 66px;
-    font-weight: 700;
+    line-height: 72px;
+    font-weight: 600;
 }
 
 #plan .plan-title{
@@ -172,7 +190,7 @@ h1{
         padding-top: 80px;
         padding-bottom: 60px;
         font-size: 20px;
-        line-height: 38px;
+        line-height: 34px;
     }
 
     #plan .plan-title{
