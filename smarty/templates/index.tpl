@@ -14,6 +14,10 @@
             <section id="plan" class="nh-wrapper">
                 {include file="plan.tpl"}
             </section>
+
+            <section id="metodo-naturhouse" class="nh-wrapper">
+                {include file="metodo.tpl"}
+            </section>
         </div>
     </body>
 </html>
