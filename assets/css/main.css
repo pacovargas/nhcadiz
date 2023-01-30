@@ -193,6 +193,49 @@ h2{
     width: 150px;
 }
 
+.asesoramiento-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 115px;
+}
+
+.asesoramiento-content div:first-child{
+    width: 41%;
+    text-align: right;
+    padding-top: 115px;
+    padding-right: 60px
+}
+
+.asesoramiento-content h2{
+    font-size: 51px;
+}
+
+.asesoramiento-content p{
+    font-size: 22px;
+    margin-bottom: 60px;
+}
+
+.asesoramiento-c2a{
+    text-align: center;
+}
+
+.asesoramiento-content div:nth-child(2){
+    flex-grow: 1;
+    background: url(../img/asesoramiento.png) no-repeat 45% 0;
+    background-size: 142%;
+    height: 600px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 15px;
+}
+
+.asesoramiento-c2a a{
+    font-size: 28px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
 @media (max-width: 1199px){
     #plan{
         padding-top: 120px;
@@ -223,6 +266,37 @@ h2{
     
     #metodo-naturhouse .metodo-item .btn{
         width: 130px;
+    }
+    
+    .full-md{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .full-md > .nh-container{
+        margin-left: 0;
+        margin-right: 0;
+        max-width: none;
+        width: 100vw;
+    }
+    
+    .asesoramiento-content div:first-child{
+        padding-top: 60px;
+        padding-left: 15px;
+    }
+
+    .asesoramiento-content h2{
+        font-size: 46px;
+    }
+
+    .asesoramiento-content p{
+        font-size: 19px;
+        margin-bottom: 60px;
+    }
+    
+    .asesoramiento-content div:nth-child(2){
+        height: 46.5vw;
+        border-bottom-right-radius: 0;
     }
 }
 
@@ -277,6 +351,31 @@ h2{
     
     #metodo-naturhouse .metodo-item .btn{
         width: 130px;
+    }
+    
+    #asesoramiento .asesoramiento-content > div{
+        width: 100%;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #asesoramiento .asesoramiento-content h2{
+        font-size: 60px;
+    }
+    
+    #asesoramiento .asesoramiento-c2a{
+        margin-bottom: 50px;
+    }
+    
+    #asesoramiento .asesoramiento-content > div:nth-child(2){
+        background-size: 100%;
+        width: calc(100vw - 60px) !important;
+        flex-grow: 0;
+        margin: 0 auto;
+        border-radius: 60px;
+        background-position: 50%;
+        height: 50vw;
     }
 }
 
@@ -354,5 +453,41 @@ h2{
     
     #metodo-naturhouse .metodo-item .btn{
         width: 60%;
+    }
+    
+    #asesoramiento .asesoramiento-content > div{
+        padding-left: 0;
+        padding-right: 0;
+        max-width: calc(100vw - 30px)
+    }
+    
+    #asesoramiento .asesoramiento-content > div:nth-child(2){
+        background-size: 100%;
+        width: calc(100% - 30px) !important;
+        max-width: none;
+        margin: 0;
+    }
+    
+    #asesoramiento .asesoramiento-content h2{
+        font-size: 30px
+    }
+    
+    #asesoramiento .asesoramiento-content p{
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+    
+    #asesoramiento .asesoramiento-c2a{
+        margin-bottom: 35px;
+    }
+    
+    .full-md{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .full-md > .nh-container{
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
