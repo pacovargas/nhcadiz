@@ -540,7 +540,7 @@ h2{
     
     #asesoramiento .asesoramiento-content > div:nth-child(2){
         background-size: 100%;
-        width: calc(100% - 30px) !important;
+        width: 100% !important;
         max-width: none;
         margin: 0;
     }
@@ -568,6 +568,7 @@ h2{
     .full-md > .nh-container{
         padding-left: 15px;
         padding-right: 15px;
+        max-width: calc(100vw - 30px);
     }
     
     .plan-alimentacion-content > div{
@@ -579,4 +580,5 @@ h2{
     .plan-alimentacion-content > div:nth-child(2){
         margin-bottom: 35px;
     }
+
 }
