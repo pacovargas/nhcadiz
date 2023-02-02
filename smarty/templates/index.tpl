@@ -22,6 +22,10 @@
             <section id="asesoramiento" class="nh-wrapper beig full-md">
                 {include file="asesoramiento.tpl"}
             </section>
+
+            <section id="plan-alimentacion" class="nh-wrapper verde full-md">
+                {include file="plan-alimentacion.tpl"}
+            </section>
         </div>
     </body>
 </html>
