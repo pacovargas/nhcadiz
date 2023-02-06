@@ -322,6 +322,13 @@ h2{
     max-width: none;
 }
 
+#complementos .btn,
+#plan-alimentacion .btn,
+#asesoramiento .btn{
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
 @media (max-width: 1199px){
     #plan{
         padding-top: 120px;
@@ -381,7 +388,7 @@ h2{
     }
     
     .asesoramiento-content div:nth-child(2){
-        height: 46.5vw;
+        height: 55vw;
         border-bottom-right-radius: 0;
     }
     
@@ -483,7 +490,8 @@ h2{
         padding-top: 0;
     }
     
-    .plan-alimentacion-content > div{
+    .plan-alimentacion-content > div,
+    .complementos-content > div{
         width: 100% !important;
         text-align: center;
     }
@@ -493,13 +501,31 @@ h2{
         margin-bottom: 50px;
     }
     
-    .plan-alimentacion-content > div:first-child{
+    .plan-alimentacion-content > div:first-child,
+    .complementos-content > div:nth-child(2){
         width: calc(100vw - 30px) !important;
         border-radius: 60px;
         margin: 0 auto;
         height: 50vw;
-        background-position-y: 83%;
-        
+        background-position-y: 83%;   
+    }
+    
+    .asesoramiento-content div:first-child p{
+        padding-left: 0;
+    }
+    
+    .complementos-content > div:first-child h2{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .complementos-content > div:first-child p{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .complementos-content{
+        padding-bottom: 100px;
     }
 }
 
@@ -598,14 +624,20 @@ h2{
     }
     
     #asesoramiento .asesoramiento-content h2,
-    #plan-alimentacion .plan-alimentacion-content h2{
+    #plan-alimentacion .plan-alimentacion-content h2,
+    #complementos .complementos-content h2{
         font-size: 30px
     }
     
     #asesoramiento .asesoramiento-content p,
-    #plan-alimentacion .plan-alimentacion-content p{
+    #plan-alimentacion .plan-alimentacion-content p,
+    #complementos .complementos-content p{
         font-size: 14px;
         margin-bottom: 40px;
+    }
+    
+    #complementos .complementos-content p:not(:last-child){
+        margin-bottom: 0;
     }
     
     #asesoramiento .asesoramiento-c2a{
@@ -631,6 +663,13 @@ h2{
     
     .plan-alimentacion-content > div:nth-child(2){
         margin-bottom: 35px;
+    }
+    
+    
+    #complementos .complementos-content > div:nth-child(2),
+    #plan-alimentacion .plan-alimentacion-content > div:nth-child(1),
+    #asesoramiento .asesoramiento-content > div:nth-child(2){
+        height: 60vw;
     }
 
 }
