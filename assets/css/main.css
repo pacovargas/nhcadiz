@@ -209,16 +209,22 @@ h2{
     width: 41%;
     text-align: right;
     padding-top: 115px;
-    padding-right: 60px
+    padding-right: 60px;
+}
+
+.asesoramiento-content div:first-child p{
+    padding-left: 18%;
 }
 
 .asesoramiento-content h2,
-.plan-alimentacion-content h2{
+.plan-alimentacion-content h2,
+.complementos-content h2{
     font-size: 51px;
 }
 
 .asesoramiento-content p,
-.plan-alimentacion-content p{
+.plan-alimentacion-content p,
+.complementos-content p{
     font-size: 22px;
     margin-bottom: 60px;
 }
@@ -230,11 +236,10 @@ h2{
 .asesoramiento-content div:nth-child(2){
     flex-grow: 1;
     background: url(../img/asesoramiento.png) no-repeat 45% 0;
-    background-size: 142%;
+    background-size: cover;
     height: 600px;
     border-bottom-left-radius: 80px;
-    border-bottom-right-radius: 80px;
-    border-top-left-radius: 15px;
+    border-top-left-radius: 80px;
 }
 
 .asesoramiento-c2a a{
@@ -243,7 +248,8 @@ h2{
     padding-right: 60px;
 }
 
-.plan-alimentacion-content{
+.plan-alimentacion-content,
+.complementos-content{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -257,7 +263,8 @@ h2{
     background: url(../img/plan-alimentario.png) no-repeat 50% blue;
     background-size: cover;
     height: 620px;
-    border-radius: 80px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
 }
 
 .plan-alimentacion-content > div:nth-child(2){
@@ -265,9 +272,54 @@ h2{
     padding-top: 30px;
 }
 
+.plan-alimentacion-content p{
+    padding-right: 5%:
+}
+
 .plan-alimentacion-content p,
 .plan-alimentacion-content h2{
     color: var(--blanco);
+}
+
+.complementos-content{
+    padding-bottom: 0;
+    padding-top: 48px;
+}
+
+.complementos-content > div:first-child{
+    width: calc(50% - 15px);
+    padding-bottom: 55px;
+}
+
+.complementos-content > div:first-child h2,
+.complementos-content > div:first-child p{
+    padding-left: 15%;
+}
+
+.complementos-content > div:first-child p{
+    margin-bottom: 0;
+}
+
+.complementos-content > div:first-child .btn{
+    margin-top: 30px;
+}
+
+.complementos-content > div:nth-child(2){
+    background: url(../img/complementos.png);
+    background-size: cover;
+    width: calc(48% - 15px);
+    margin-top: 80px;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+
+.fullwidth{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.fullwidth > .nh-container{
+    max-width: none;
 }
 
 @media (max-width: 1199px){

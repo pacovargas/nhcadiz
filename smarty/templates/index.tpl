@@ -19,12 +19,16 @@
                 {include file="metodo.tpl"}
             </section>
 
-            <section id="asesoramiento" class="nh-wrapper beig full-md">
+            <section id="asesoramiento" class="nh-wrapper beig full-md fullwidth">
                 {include file="asesoramiento.tpl"}
             </section>
 
-            <section id="plan-alimentacion" class="nh-wrapper verde full-md">
+            <section id="plan-alimentacion" class="nh-wrapper verde full-md fullwidth">
                 {include file="plan-alimentacion.tpl"}
+            </section>
+
+            <section id="complementos" class="nh-wrapper verde-claro full-md fullwidth">
+                {include file="complementos.tpl"}
             </section>
         </div>
     </body>
