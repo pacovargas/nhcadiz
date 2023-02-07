@@ -9,6 +9,6 @@
                 <a href='#' class="btn btn-primary">Pide cita</a>
             </div>
         </div>
-        <div></div>
+        <div class="imagen-full"></div>
     </div>
 </div>
