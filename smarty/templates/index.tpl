@@ -30,6 +30,14 @@
             <section id="complementos" class="nh-wrapper verde-claro full-md fullwidth">
                 {include file="complementos.tpl"}
             </section>
+            
+            <section id="tienda" class="nh-wrapper beig">
+                {include file="tienda.tpl"}
+            </section>
+
+            <section id="contacto" class="nh-wrapper verde">
+                {include file="contacto.tpl"}
+            </section>
         </div>
     </body>
 </html>

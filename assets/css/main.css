@@ -46,7 +46,7 @@ h2{
 }
 
 #portada{
-    background: url(/assets/img/cover.png) no-repeat;
+    background: url(/assets/img/cover.png) no-repeat 50%;
     background-size: cover;
     height: 60vw;
     padding-top: 45px;
@@ -197,6 +197,7 @@ h2{
 .btn-secondary{
     background-color: var(--blanco);
     color: var(--var-verde);
+    border: none;
 }
 
 #metodo-naturhouse .metodo-item .btn{
@@ -223,7 +224,8 @@ h2{
 
 .asesoramiento-content h2,
 .plan-alimentacion-content h2,
-.complementos-content h2{
+.complementos-content h2,
+.contacto-content h2{
     font-size: 51px;
 }
 
@@ -334,6 +336,136 @@ h2{
     padding-bottom: 14px;
 }
 
+.tienda-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.tienda-content h2{
+    font-size: 51px;
+    line-height: 1.2;
+    height: 123px;
+}
+
+.tienda-content .mapa-container h2{
+    max-width: 250px;
+}
+
+.mapa-container{
+    width: 42.5%;
+    padding-left: 7.5%;
+}
+
+.mapa-container iframe{
+    width: 100%
+}
+
+.mapa-box{
+    background: var(--verde);
+    border-radius: 40px;
+    padding-bottom: 35px;
+}
+
+.mapa > iframe{
+    border-radius: 40px
+}
+
+.mapa-container p{
+    text-align: center;
+    color: var(--blanco);
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.horario-container{
+    width: 50%;
+    text-align: center;
+}
+
+
+.horario-row{
+    display: flex;
+    font-size: 36px;
+    color: var(--verde);
+    margin-bottom: 15px;
+}
+
+.horario-row > .dia{
+    width: 205px;
+    text-align: left;
+}
+
+.horario-row > .horas{
+    width: 365px;
+    text-align: left;
+}
+
+.horarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-horario{
+    margin-top: 35px;
+}
+
+.logo-horario > img{
+    max-width: 400px;
+}
+
+
+.contacto-content{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 25px;
+}
+
+.contacto-content input[type=text],
+.contacto-content textarea{
+    width: calc(100% - 15px);
+    border-radius: 0;
+    border: 0;
+    color: var(--negro);
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 15px;
+}
+
+.contacto-content input::placeholder,
+.contacto-content textarea::placeholder{
+    color: var(--negro);
+    opacity: 1;
+}
+
+.contacto-content textarea{
+    padding-top: 15px;
+    height: 160px;
+}
+
+.contacto-content input[type=text]{
+    height: 50px;
+}
+
+.contacto-content h2{
+    text-align: center;
+    color: var(--blanco);
+}
+
+.form-row{
+    margin-bottom: 25px
+}
+
+.submit-row{
+    text-align: right
+}
+
 @media (min-width: 1922px){
     .imagen-full{
         border-radius: 80px;
@@ -415,6 +547,26 @@ h2{
     .plan-alimentacion-content > div:nth-child(2){
         width: calc(42% - 30px);
         padding-top: 30px;
+    }
+    
+    .horario-row{
+        font-size: 24px;
+    }
+
+    .horario-row > .dia{
+        width: 130px;
+    }
+
+    .horario-row > .horas{
+        width: 250px;
+    }
+    
+    .logo-horario > img{
+        max-width: 300px;
+    }
+    
+    .mapa-box iframe{
+        height: 310px;
     }
 }
 
@@ -538,6 +690,23 @@ h2{
     .complementos-content{
         padding-bottom: 100px;
     }
+    
+    .mapa-container{
+        padding-left: 0;
+        width: 100%
+    }
+    
+    .tienda-content .mapa-container h2,
+    .tienda-content .horario-container h2{
+        max-width: none;
+        text-align: center;
+        height: auto;
+    }
+    
+    .horario-container{
+        width: 100%;
+        padding-top: 40px;
+    }
 }
 
 @media (max-width: 767px){
@@ -636,7 +805,10 @@ h2{
     
     #asesoramiento .asesoramiento-content h2,
     #plan-alimentacion .plan-alimentacion-content h2,
-    #complementos .complementos-content h2{
+    #complementos .complementos-content h2,
+    .tienda-content .mapa-container h2,
+    .tienda-content .horario-container h2,
+    .contacto-content h2{
         font-size: 30px
     }
     
@@ -682,5 +854,51 @@ h2{
     #asesoramiento .asesoramiento-content > div:nth-child(2){
         height: 60vw;
     }
+    
+    .tienda-content{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .mapa-container p{
+        font-size: 20px;
+        margin-top: 20px
+    }
+    
+    .mapa-box{
+        padding-bottom: 25px;
+    }
+    
+    .horario-row{
+        font-size: 18px;
+    }
 
+    .horario-row > .dia{
+        width: 100px;
+    }
+
+    .horario-row > .horas{
+        width: 190px;
+    }
+    
+    .logo-horario > img{
+        max-width: 200px;
+    }
+    
+    .mapa-box iframe{
+        height: 280px;
+    }
+    
+    .contacto-content{
+        padding-top: 40px;
+    }
+    
+    .contacto-content input[type=text],
+    .contacto-content textarea{
+        font-size: 14px;
+    }
+    
+    .submit-row{
+        text-align: center;
+    }
 }
