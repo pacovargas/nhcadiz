@@ -38,6 +38,10 @@
             <section id="contacto" class="nh-wrapper verde">
                 {include file="contacto.tpl"}
             </section>
+
+            <footer id="footer" class="nh-wrapper verde">
+                {include file="footer.tpl"}
+            </footer>
         </div>
     </body>
 </html>
