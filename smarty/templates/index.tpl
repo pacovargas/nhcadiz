@@ -7,6 +7,10 @@
     
     <body>
         <div id="wrapper">
+            <header id="header">
+                {include file="header.tpl"}
+            </header>
+            
             <section id="portada" class="nh-wrapper">
                 {include file="portada.tpl"}
             </section>

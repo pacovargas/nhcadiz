@@ -538,6 +538,40 @@ h2{
     opacity: 0.8
 }
 
+.menu-container{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.menu-container ul{
+    display: flex;
+    list-style: none;
+    column-gap: 35px;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+.menu-container ul li{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-container ul li a{
+    text-decoration: none;
+    color: var(--verde);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px
+}
+
 @media (min-width: 1922px){
     .imagen-full{
         border-radius: 80px;
